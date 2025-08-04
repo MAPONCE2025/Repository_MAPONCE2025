@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head><title>Gestionar Falla</title></head>
+<body>
+    <h1>Gestionar Falla</h1>
+    <p><strong>Descripción:</strong> {{ falla.descripcion }}</p>
+    <p><strong>Ubicación:</strong> {{ falla.ubicacion }}</p>
+    <form method="post">
+        <input type="text" name="responsable" placeholder="Responsable" required>
+        <input type="date" name="fecha_planificada" required>
+        <input type="date" name="fecha_real" required>
+        <textarea name="acciones" placeholder="Acciones realizadas"></textarea>
+        <textarea name="materiales" placeholder="Materiales utilizados"></textarea>
+        <select name="estado">
+            <option value="pendiente">Pendiente</option>
+            <option value="en proceso">En proceso</option>
+            <option value="resuelto">Resuelto</option>
+        </select>
+        <button type="submit">Guardar</button>
+    </form>
+    <p><a href="/">Volver</a></p>
+</body>
+</html>
