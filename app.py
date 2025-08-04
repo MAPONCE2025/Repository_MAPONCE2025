@@ -32,7 +32,7 @@ with open('templates/index.html', 'w') as f:
         {% endfor %}
     </ul>
 </body>
-</html>)
+</html>''')
 
 with open('templates/gestionar.html', 'w') as f:
     f.write('''<!DOCTYPE html>
@@ -57,7 +57,7 @@ with open('templates/gestionar.html', 'w') as f:
     </form>
     <p><a href="/">Volver</a></p>
 </body>
-</html>)
+</html>''')
 
 db = SQLAlchemy(app)
 
