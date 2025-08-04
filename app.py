@@ -57,7 +57,7 @@ with open('templates/gestionar.html', 'w') as f:
     </form>
     <p><a href="/">Volver</a></p>
 </body>
-</html>')
+</html>)
 
 db = SQLAlchemy(app)
 
